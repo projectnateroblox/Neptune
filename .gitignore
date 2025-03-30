@@ -37,6 +37,7 @@ tmp/
 temp/
 main.py
 scripts/*
+workspace
 
 # Editor directories and files
 .vscode/*
