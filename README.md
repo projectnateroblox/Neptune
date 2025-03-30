@@ -1,30 +1,58 @@
 # Neptune Executor
 
-A modern Roblox script executor built with React, TypeScript, and Electron.
+A modern, powerful Roblox script executor built with React, TypeScript, and Electron. Neptune provides a sleek, intuitive interface for executing and managing Roblox scripts.
+
+![Neptune Executor](public/electron-vite.svg)
 
 ## Features
 
-- Modern and intuitive user interface
-- Built with React and TypeScript for type safety
-- Cross-platform support through Electron
-- Fast and efficient script execution
-- Secure and reliable
+- 🎨 Modern, responsive UI with dark/light mode support
+- ⚡ Fast and efficient script execution
+- 🔒 Secure and reliable execution environment
+- 📱 Cross-platform support (Windows, macOS, Linux)
+- 🎯 Built with React and TypeScript for type safety
+- 🔄 Real-time script updates and hot reloading
+- 📝 Built-in script editor with syntax highlighting
+- 📁 Script management and organization
+- 🔍 Advanced search and filtering capabilities
 
-## Getting Started
+## Requirements
 
-1. Clone the repository
+### Development Requirements
+
+- [Node.js](https://nodejs.org/en) 18.0.0 or higher
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) 9.0.0 or higher
+- [Git](https://git-scm.com/) (optional)
+- [Visual Studio Code](https://code.visualstudio.com/) (recommended)
+- TypeScript 5.0.0 or higher
+- React Developer Tools (optional)
+
+## Installation
+
+### Development Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/direkzz/Neptune.git
+   cd Neptune
+   ```
+   or download the zip
+
 2. Install dependencies:
+
    ```bash
    npm install
    ```
+
 3. Start the development server:
    ```bash
    npm run dev
    ```
 
-## Building
+### Building for Production
 
-To build the application:
+To create a production build:
 
 ```bash
 npm run build
@@ -32,37 +60,29 @@ npm run build
 
 The built application will be available in the `dist` directory.
 
+## Usage
+
+1. Launch Neptune Executor
+2. Connect to your Roblox game
+3. Load or create your scripts
+4. Execute scripts with a single click
+
+## Security
+
+- Neptune Executor is built with security in mind
+- Don't worry about rats or logger
+- No data collection or telemetry
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# React + TypeScript + Vite
+## Acknowledgments
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Built with [Electron](https://www.electronjs.org/)
+- UI powered by [React](https://reactjs.org/)
+- Type safety with [TypeScript](https://www.typescriptlang.org/)
+- Styling with [Tailwind CSS](https://tailwindcss.com/)
+- Editor with [Monaco Editor](https://www.npmjs.com/package/@monaco-editor/react)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Shout out to ai for writing this README

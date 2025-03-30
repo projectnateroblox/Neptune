@@ -23,8 +23,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    },
+    }
   },
-  "include": ["src", "electron", "electron/server.ts"],
+  "include": ["src", "electron", "electron/server.ts", "cors-anywhere"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

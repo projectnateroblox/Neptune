@@ -62,7 +62,7 @@ interface ScriptDetailResponse {
   script: Script;
 }
 
-const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
+const CORS_PROXY = "http://localhost:5641/proxy?url=";
 
 const fetchScripts = async (page: number = 1, searchQuery: string = ""): Promise<ScriptsResponse> => {
   const url = searchQuery 

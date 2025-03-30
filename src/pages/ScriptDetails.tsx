@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Editor,{useMonaco} from "@monaco-editor/react"
 import { netThemeDark } from "@/utils/theme.ts";
 
-const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
+const CORS_PROXY = "http://localhost:5641/proxy?url=";
 
 interface ScriptDetails {
   script: {

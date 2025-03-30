@@ -146,13 +146,21 @@ const Home = () => {
   const activeTab = tabs.find((tab) => tab.id === activeTabId) || tabs[0];
 
   const handleExecute = () => {
-    // try {
-    //   const result = new Function(activeTab.content)()
-    //   console.log('Execution result:', result)
-    // } catch (error) {
-    //   console.error('Execution error:', error)
-    // }
-    console.log("Execute");
+    fetch("http://localhost:2025/data/", {
+      // make sure they match
+      method: "post",
+      headers: {
+        "content-type": "text/plain"
+      },
+      body: activeTab.content
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        console.log("Server returned: ", data);
+      })
+      .catch((error) => {
+        console.error("ERM! ", error);
+      });
   };
 
   const handleClear = () => {
@@ -174,8 +182,17 @@ const Home = () => {
   };
 
   const handleAttach = () => {
-    // Implement file attachment logic
-    console.log("Attach file");
+    fetch("http://localhost:2025/attach/", {
+      // make sure they match
+      method: "post",
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        console.log("Server returned: ", data);
+      })
+      .catch((error) => {
+        console.error("ERM! ", error);
+      });
   };
 
   return (

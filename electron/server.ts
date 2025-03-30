@@ -36,11 +36,11 @@ interface FileData {
 // API Route to fetch files
 app.get('/files', async (_req: Request, res: Response) => {
   try {
-    console.log(`󰉋 Reading directory: ${projectDir}`);
+    console.log(`SERVER (workspace): Reading directory: ${projectDir}`);
 
     // Ensure directory exists
     await fs.access(projectDir).catch(() => {
-      throw new Error(`  Directory does not exist: ${projectDir}`);
+      throw new Error(`SERVER (workspace): Directory does not exist: ${projectDir}`);
     });
 
     const files = await fs.readdir(projectDir, { withFileTypes: true })
@@ -67,19 +67,23 @@ app.get('/files', async (_req: Request, res: Response) => {
     res.json(fileData)
   } catch (err) {
     const errorMessage = err instanceof Error ? err.message : 'Unknown error'
-    console.error('Error reading directory:', errorMessage)
+    console.error('SERVER (workspace): Error reading directory:', errorMessage)
     res.status(500).json({ error: errorMessage })
   }
 })
 
 // Start the server
 const server: Server = app.listen(PORT, () => {
-  console.log(` Server running on http://localhost:${PORT}`)
+  console.log(`Server (workspace) running on http://localhost:${PORT}`)
 })
 
 // Gracefully stop the server when Electron closes
-export const stopServer = (): void => {
-  server.close(() => console.log('  Server stopped'))
+export const stopServerWorkspace = (): void => {
+  server.close(() => console.log('Server stopped'))
+}
+
+export const callFunction = (): void => {
+  console.log("SERVER (workspace): Called");
 }
 
 export default server
