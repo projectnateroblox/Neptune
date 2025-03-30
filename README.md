@@ -78,5 +78,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Type safety with [TypeScript](https://www.typescriptlang.org/)
 - Styling with [Tailwind CSS](https://tailwindcss.com/)
 - Editor with [Monaco Editor](https://www.npmjs.com/package/@monaco-editor/react)
+- Using [QuorumAPI](https://discord.gg/ZJdjZze5)
 
 ### Shout out to ai for writing this README
