@@ -2,16 +2,10 @@
 
 A modern, powerful Roblox script executor built with React, TypeScript, and Electron. Neptune provides a sleek, intuitive interface for executing and managing Roblox scripts.
 
-![Neptune Executor](public/electron-vite.svg)
-
 ## Features
 
 - 🎨 Modern, responsive UI with dark/light mode support
-- ⚡ Fast and efficient script execution
-- 🔒 Secure and reliable execution environment
-- 📱 Cross-platform support (Windows, macOS, Linux)
 - 🎯 Built with React and TypeScript for type safety
-- 🔄 Real-time script updates and hot reloading
 - 📝 Built-in script editor with syntax highlighting
 - 📁 Script management and organization
 - 🔍 Advanced search and filtering capabilities
@@ -50,9 +44,9 @@ A modern, powerful Roblox script executor built with React, TypeScript, and Elec
    npm run dev
    ```
 
-### Building for Production
+### Building the app
 
-To create a production build:
+To build the app run:
 
 ```bash
 npm run build
