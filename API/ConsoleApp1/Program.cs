@@ -10,6 +10,7 @@ namespace ConsoleApp1
         /// <summary>
         /// Basic C# HTTP server that listens for incoming requests on localhost:2025.
         /// I assume that you understand the basic of C#, So i don't need to explain in detail.
+        /// also read the documentation/README
         /// </summary>
         static void Main(string[] args)
         {
