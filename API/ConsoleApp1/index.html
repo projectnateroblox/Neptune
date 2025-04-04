@@ -1,0 +1,40 @@
+﻿
+<!DOCTYPE html>
+<html land = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width,initial-scale=1.0">
+    <title>websploit 6.9</title>
+
+</head>
+<body>
+<textarea id = "code" rows = "10" cols="50" placeholder = "-- insert shit script"></textarea>
+<button onclick = "send()">execute</button>
+
+<script>
+    function send(){
+        const code = document.getElementById("code").value;
+
+        // now we create a web server thats where we can send it namedpipe IS possible but i dont recommend it
+        // ps. we are doing that xd
+
+        fetch("http://localhost:2025/sigma", { // make sure they match
+            method: "post",
+            headers: {
+                "content-type": "text/plain"
+
+            },
+            body: code
+        })
+            .then(response => response.text())
+            .then(data =>{
+                console.log("websploit returned: ", data);
+            })
+            .catch(error =>{
+                console.error("ERM! ", error);
+            });
+    }
+</script>
+</body>
+</html> 
+

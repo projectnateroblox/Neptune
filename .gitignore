@@ -15,7 +15,6 @@ build/
 out/
 release/
 dist-electron/
-*.exe
 *.asar
 
 # IDE and editor files

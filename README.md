@@ -61,6 +61,10 @@ The built application will be available in the `dist` directory.
 3. Load or create your scripts
 4. Execute scripts with a single click
 
+## Workspace
+
+Insert your scripts into the '[scripts](scripts/)' folder
+
 ## Security
 
 - Neptune Executor is built with security in mind
@@ -81,3 +85,5 @@ This project is licensed under the MIT License - see the [LICENSE](license) file
 - Using [QuorumAPI](https://discord.gg/ZJdjZze5)
 
 ### Shout out to ai for writing this README
+
+# Read [Program.cs](api/ConsoleApp1/Program.cs) for more information about api
