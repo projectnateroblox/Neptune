@@ -77,7 +77,7 @@ const AppContent = (): JSX.Element => {
   return (
     <div className="flex h-screen bg-deep-900">
       <div className="bg-deep-800 h-9 flex items-center justify-between px-4 fixed top-0 left-0 w-full z-50 draggable">
-        <div className="text-ocean-300 text-sm">Neptune Editor</div>
+        <div className="text-ocean-300 text-sm">Project Nate</div>
         <WindowControls
           onMinimize={handleMinimize}
           onMaximize={handleMaximize}
