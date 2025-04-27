@@ -18,7 +18,7 @@ const Home = () => {
             id: "welcome",
             name: "welcome.lua",
             language: "lua",
-            content: '-- Welcome to Neptune Editor\n\nprint("Hello, Neptune!")',
+            content: '-- Welcome to Project Nate\n\nprint("Hello, Project Nate!")',
           },
         ];
   });
@@ -110,7 +110,7 @@ const Home = () => {
       id: `file-${Date.now()}`,
       name: `untitled-${tabs.length + 1}.lua`,
       language: "lua",
-      content: `-- Welcome to Neptune Executor\n\nprint("Hello, Neptune!")`,
+      content: `-- Welcome to Project Nate\n\nprint("Hello, Project Nate!")`,
     };
     setTabs([...tabs, newTab]);
     setActiveTabId(newTab.id);
